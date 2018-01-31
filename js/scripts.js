@@ -7,11 +7,11 @@ function numbersToConvert(digitsToConvert) {
     result.push(+numbersInString.charAt(i));
   };
   if(digitsToConvert % 3 === 0) {
-    $("#output").append("I'm sorry dave.");
+    $("#output").append("I'm sorry, Dave. I'm afraid I can't do that.");
   } else if (result.includes(1)) {
-    $("#output").append("Boop");
+    $("#output").append("Boop!");
   } else if (result.includes(0)) {
-    $("#output").append("Beep");
+    $("#output").append("Beep!");
     } else {
       for (var d = 0; d <= digitsToConvert; d++){
         $("#output").append("<li>" + d + "</li>");
