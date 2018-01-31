@@ -1,25 +1,34 @@
-function numbersToConvert(inputNumber) {
-  var result = [];
-  var numbersInString=inputNumber.toString()
-  if(inputNumber%3===0) {
-    result += "I'm sorry, Dave";
-  }
-  else if (numbersInString.includes("1")) {
-    result += "Boop!";
-  }
-  else if (numbersInString.includes("0")) {
-    result += "Beep!";
-  }
+// back-end logic
 
-  return result;
+function numbersToConvert(digitsToConvert) {
+  var result = [];
+  var numbersInString = digitsToConvert.toString();
+  for (var i = 0; i < numbersInString.length; i++) {
+    result.push(+numbersInString.charAt(i));
+  };
+  if(digitsToConvert % 3 === 0) {
+    $("#output").append("I'm sorry dave.");
+  } else if (result.includes(1)) {
+    $("#output").append("Boop");
+  } else if (result.includes(0)) {
+    $("#output").append("Beep");
+    } else {
+      for (var d = 0; d <= digitsToConvert; d++){
+        $("#output").append("<li>" + d + "</li>");
+      };
+    };
+
+    return result;
 };
 
+
+// front-end logic
 
 $(document).ready(function(){
   $("form#number-converter").submit(function(event){
     event.preventDefault();
-     var digitsToConvert = $("#inputNumber").val();
-    //  var convertedDigit = digit(inputNumber);
-     $("#output").text(numbersToConvert(digitsToConvert));
+      var digitsToConvert = parseInt($("#inputNumber").val());
+
+     numbersToConvert(digitsToConvert);
    });
  });
