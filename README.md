@@ -3,15 +3,15 @@
 By Ainur Dzhaianbaeva
 
 ##Description
-This test application converts numbers into a range of numbers, with following exceptions:
+_This test application converts numbers into a range of numbers, with following exceptions:
 *if entered number is divisible by 3, the application will return: "I'm sorry, Dave. I'm afraid I can't do that."
 *if entered number contains 1, it'll return "Boop!"
-*if entered number contains 0, the app will return "Beep!".
+*if entered number contains 0, the app will return "Beep!"._
 
 ##Specifications
-####Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."
+_####Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."
   Example Input: 12
-  Example Output: "I'm sorry, Dave. I'm afraid I can't do that."
+  Example Output: "I'm sorry, Dave. I'm afraid I can't do that."_
 
 ####Numbers that contain a 1 are replaced (all digits) with "Boop!"
   Example Input: 133
@@ -31,9 +31,9 @@ Example Output: "Boop!"
 
 ##Setup/Installation Requirements
 
-*Click the following link:
-*Clone a repository
-*Open in a browser
+* _Click the following link:_
+* _Clone a repository_
+* _Open in a browser_
 
 ##Technologies Used
 HTML
