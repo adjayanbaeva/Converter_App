@@ -1,0 +1,12 @@
+h3 {
+  font-style: oblique;
+  text-align: center;
+  font-weight: bold;
+}
+.container{
+  text-align: center;
+}
+.container {
+  margin: 150px;
+  border: 2px solid beige;
+  padding: 1x;}
