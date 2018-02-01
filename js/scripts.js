@@ -27,8 +27,10 @@ function numbersToConvert(digitsToConvert) {
 $(document).ready(function(){
   $("form#number-converter").submit(function(event){
     event.preventDefault();
+    $("#output").text("");
       var digitsToConvert = parseInt($("#inputNumber").val());
 
      numbersToConvert(digitsToConvert);
+
    });
  });
